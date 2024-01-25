@@ -2,10 +2,9 @@
 
  An application and some functions to search for answers on Arxiv papers given a user query. It's intended to code different approaches to this task, applying techniques like simple RAG, Query Rewrite, Hierarquical Retrieval, etc.
  
-#### This repository is still in progress.
+## This repository is still in progress.
 
 # Content
-
 - arxiv_utils: functions to apply a keyword search on Arxiv papers and download the PDF files
 
 - rag_query_pipeline: A RAG chain using Query Pipelines to extract answers from the Arxiv papers. 
