@@ -9,6 +9,8 @@
 
 - rag_query_pipeline: A RAG chain using Query Pipelines to extract answers from the Arxiv papers. 
 
+- app: Streamlit App to query the Arxiv papers **In progress**
+
 # License
 
 Copyright 2023 Eduardo Muñoz

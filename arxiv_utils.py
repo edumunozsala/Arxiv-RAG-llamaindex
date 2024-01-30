@@ -1,5 +1,6 @@
 import arxiv
 import os
+import shutil
 import nltk
 from rake_nltk import Rake
 
@@ -39,3 +40,20 @@ def download_papers(query, numresults, path):
         results.append(paper_doc)
     return results
 
+def delete_papers(path):
+    print("Cleaning the papers/data folder")
+    #folder = "src/data"
+    for filename in os.listdir(path):
+        if filename != ".gitignore":
+            # Get the filename
+            file_path = os.path.join(path, filename)
+            try:
+                # if it is a filename
+                if os.path.isfile(file_path) or os.path.islink(file_path):
+                    os.unlink(file_path)
+                # if it is a dir
+                elif os.path.isdir(file_path):
+                    shutil.rmtree(file_path)
+                    
+            except Exception as e:
+                print("Failed to delete %s. Reason: %s" % (file_path, e))

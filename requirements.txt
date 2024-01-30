@@ -1,5 +1,14 @@
-python-dotenv
-pypdf2
+python-dotenv==1.0.0
 llama-index
+llama-hub==0.0.60
+rank_bm25==0.2.2
+unstructured[pdf]
+sentence-transformers==2.2.2
+torch==2.1.2
+# arxiv API
 nltk
 rake-nltk
+# app
+streamlit==1.30.0
+streamlit-chat==0.1.1
+#pinecone-client
